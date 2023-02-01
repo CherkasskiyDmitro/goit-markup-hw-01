@@ -1,9 +1,14 @@
-body {
-  font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif;
-  color: #2e2f42;
-  background: #F4F4FD;
+:root{
+--primary-font:"Roboto", sans-serif;
+--secondary-font:"Raleway", sans-serif;
+--primary-text-color:#2e2f42;
+--secondary-text-color:#434455;
+--hover-text-color:#404bbf;
+}
 
+
+body {
+  font-family: var(--primary-font)
 }
 /* Навігація */
 
@@ -11,12 +16,11 @@ body {
   list-style: none;
 }
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
-  color: #2e2f42;
+  color: var(--primary-text-color);
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -26,21 +30,18 @@ body {
 }
 .logo:focus,
 .logo:hover{
-  color:#404bbf;
+  color:var(--hover-text-color);
 }
-
-
 .nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: inherit;
+  color: var(--primary-font);
   text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color:var(--hover-text-color);
 }
 
 .nav-item {
@@ -52,16 +53,16 @@ body {
   list-style: none;
 }
 .contact-link {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 .contact-link:hover,
 .contact-link:focus {
-  color: #404bbf;
+  color: var(--hover-text-color);
 }
 /* Головна сторінка */
 .hero {
@@ -70,7 +71,6 @@ body {
   background-color: #2e2f42;
 }
 .title-hero {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -91,7 +91,7 @@ body {
 
 .button-hero:focus,
 .button-hero:hover {
-  background: #404bbf;
+  background-color: var(--hover-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -105,16 +105,15 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color:var(--primary-text-color);
 }
 .artical-item p {
   font-size: 16px;
   line-height: 1.2;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 /* Що ми робимо */
 .features {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
 }
@@ -123,7 +122,6 @@ body {
 }
 /* Наша команда */
 .gallery {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11px;
 }
@@ -135,22 +133,21 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color:var(--primary-text-color);
 }
 .gallery-item > p {
   font-size: 16px;
   line-height:1.5;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 footer {
   width: 1440px;
   height: 310px;
-  background-color: #434455;
+  background-color: #2E2F42;
 }
 
 footer p {
-  font-style: normal;
   width: 264px;
   height: 72px;
   font-size: 16px;
@@ -163,10 +160,9 @@ footer p {
   list-style: none;
 }
 .prtf-button {
-  background: #f4f4fd;
+  background-color: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -178,7 +174,7 @@ footer p {
 }
 .prtf-button:hover,
 .prtf-button:focus {
-  background: #404bbf;
+  background-color:var(--hover-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -194,10 +190,10 @@ footer p {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: inherit;
+  color: var(--primary-text-color);
 }
 .prtf-title p {
   font-size: 16px;
   line-height: 24px;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
